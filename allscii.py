@@ -119,14 +119,14 @@ while pointer <= len(code)-1:
         case '?': print(chr(32+stack[-1]), end='')
         case 'C':
             if stack[-1] != 0:
-                print("While loop started")
+                #print("While loop started") #Debug
                 loops.append(pointer)
                 whileNotZero = True
             else:
                 jumptoF = True
         case 'D':
             if stack[-1] == 0:
-                print("While loop started")
+                #print("While loop started") #Debug
                 loops.append(pointer)
                 whileZero = True
             else:
